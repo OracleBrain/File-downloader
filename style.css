@@ -1,65 +1,83 @@
-/* import Google Font - Poppins */
+/* Import Google Font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
 }
-body{
+
+body {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #4285f4;
+    background: #f0f0f0; /* Light background color */
+    font-family: 'Poppins', sans-serif;
 }
 
-.wrapper{
+.wrapper {
     width: 500px;
     background: #fff;
-    border-radius: 7px;
-    padding: 20px 25px 15px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
 }
 
-header h1{
-    font-size: 27px;
-    font-size: 500;
+.wrapper:hover {
+    transform: translateY(-5px); /* Hover effect */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15); /* Lifted shadow on hover */
 }
 
-header p{
+header h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header p {
     font-size: 18px;
-    margin-top: 5px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-form{
-    margin: 20px 0 27px;
+form {
+    margin-bottom: 30px;
 }
 
-form input{
+form input {
     width: 100%;
-    height: 60px;
+    height: 50px;
     outline: none;
-    font-size: 19px;
-    padding: 0 17px;
-    border-radius: 5px;
-    border: 1px solid #b3b2b2;
+    font-size: 16px;
+    padding: 0 20px;
+    border-radius: 25px;
+    border: 2px solid #ddd;
+    transition: border-color 0.3s ease;
 }
 
-form button{
-    opacity: 0.7;
+form input:focus {
+    border-color: #4285f4; /* Highlight on focus */
+}
+
+form button {
     width: 100%;
+    height: 50px;
     border: none;
     outline: none;
     color: #fff;
     cursor: pointer;
-    padding: 15px 0;
-    font-size: 17px;
-    margin-top: 20px;
-    border-radius: 5px;
-    background: #4285f4;
-    pointer-events: none;
+    padding: 10px 0;
+    font-size: 16px;
+    border-radius: 25px;
+    background: linear-gradient(to right, #4e8bff, #3ea6ff); /* Gradient background */
+    transition: background 0.3s ease;
 }
-form input:valid ~ button{
-    opacity: 1;
-    pointer-events: auto;
+
+form button:hover {
+    background: linear-gradient(to right, #3ea6ff, #4e8bff); /* Smooth gradient change on hover */
 }
