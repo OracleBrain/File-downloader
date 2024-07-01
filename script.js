@@ -24,6 +24,6 @@ function fetchFile(url) {
     }).catch(() => {
         // catch method will call if any error comes during downloading 
         downloadBtn.innerText = "Download File";
-        alert("failed to download file!");
+        alert("Failed to download file!");
     });
 }
