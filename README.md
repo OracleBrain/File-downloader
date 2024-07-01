@@ -17,6 +17,6 @@ This simple web tool allows users to download images, videos, or PDF files by si
 - JavaScript
 
 #### Preview:
-[![File Downloader Preview](preview.png)](https://yourlinkhere.com)
+![](screenshot.jpg)
 
 ---
