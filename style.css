@@ -58,6 +58,7 @@ form input {
     border-radius: 25px;
     border: 2px solid #ddd;
     transition: border-color 0.3s ease;
+    margin-bottom: 10px;
 }
 
 form input:focus {
